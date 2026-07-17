@@ -3,6 +3,30 @@
 @import "./typography.css";
 @import "rehype-callouts/theme/obsidian";
 
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/GeneralSans-Medium.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono-Medium.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Arabic";
+  src: url("/fonts/noto-sans-arabic-v33-arabic-regular.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @layer base {
@@ -36,3 +60,4 @@
 :target {
   scroll-margin-block: 1rem;
 }
+

@@ -1,5 +1,4 @@
 ---
-import { Font } from "astro:assets";
 import { ClientRouter } from "astro:transitions";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { resolveDefaultOgImagePath } from "@/utils/resolveDefaultOgImagePath";
@@ -12,6 +11,7 @@ type Props = {
   description?: string;
   ogImage?: string;
   canonicalURL?: string;
+  dir?: "ltr" | "rtl";
 };
 
 const { site } = config;
@@ -21,6 +21,7 @@ const {
   description = site.description,
   ogImage = resolveDefaultOgImagePath(config),
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+  dir = site.dir ?? "ltr",
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.site ?? Astro.url);
@@ -32,7 +33,7 @@ const rssHref = getRelativeLocaleUrl(
 
 <!doctype html>
 <html
-  dir={site.dir ?? "ltr"}
+  dir={dir}
   lang={Astro.currentLocale ?? site.lang}
   class="overflow-y-scroll scroll-smooth"
 >
@@ -44,11 +45,6 @@ const rssHref = getRelativeLocaleUrl(
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Font -->
-    <Font
-      cssVariable="--font-google-sans-code"
-      preload={[{ subset: "latin", weight: 400, style: "normal" }]}
-    />
 
     <!-- Primary meta -->
     <title>{title}</title>
@@ -117,7 +113,8 @@ const rssHref = getRelativeLocaleUrl(
     <ClientRouter />
   </head>
   <body
-    class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"
+  class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"
+  style={dir === "rtl" ? "font-family: var(--font-arabic)" : ""}
   >
     <slot />
     <script>

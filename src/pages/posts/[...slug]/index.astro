@@ -69,6 +69,7 @@ const {
   timezone,
   tags,
   hideEditPost,
+  lang,
 } = post.data;
 
 const { Content } = await render(post);
@@ -101,6 +102,7 @@ const ogImage = ogImageUrl
   canonicalURL={canonicalURL}
   pubDatetime={pubDatetime}
   modDatetime={modDatetime}
+  lang={lang}
 >
   <Header />
 

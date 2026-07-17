@@ -1,7 +1,6 @@
 import {
   defineConfig,
   envField,
-  fontProviders,
   svgoOptimizer,
 } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
@@ -58,7 +57,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  fonts: [
+/*  fonts: [
     {
       name: "Google Sans Code",
       cssVariable: "--font-google-sans-code",
@@ -68,7 +67,7 @@ export default defineConfig({
       styles: ["normal", "italic"],
       formats: ["woff", "ttf"],
     },
-  ],
+  ],*/
   env: {
     schema: {
       PUBLIC_GOOGLE_SITE_VERIFICATION: envField.string({
