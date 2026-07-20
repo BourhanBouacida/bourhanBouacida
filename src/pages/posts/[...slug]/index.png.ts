@@ -153,7 +153,7 @@ const [regularData, boldData] = await Promise.all([
           },
         ],
       },
-    },
+    } as any,
     {
       width: 1200,
       height: 630,

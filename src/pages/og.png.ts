@@ -125,7 +125,7 @@ export const GET: APIRoute = async () => {
           },
         ],
       },
-    },
+    } as any,
     {
       width: 1200,
       height: 630,
