@@ -4,8 +4,8 @@ const localizedContent: Record<string, { author: string; description: string }> 
     description: "A Boy advancing in steady steps toward this world.",
   },
   ar: {
-    author: "برهان بوعسيدة",
-    description: "شاب يتقدم بخطى ثابتة نحو هذا العالم.",
+    author: "برهان بوعصيدة",
+    description: "شاب يتقدم بخطى ثابتة نحو العالم.",
   },
 };
 
