@@ -9,6 +9,7 @@
   --color-border: var(--border);
   --font-app: var(--font-GeneralSans, "GeneralSans", sans-serif);
   --font-arabic: "Noto Sans Arabic", sans-serif;
+  --font-logo: "Array Wide", wide;
 }
 
 /* Light theme values */

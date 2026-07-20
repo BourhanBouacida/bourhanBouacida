@@ -2,6 +2,7 @@
 @import "./theme.css";
 @import "./typography.css";
 @import "rehype-callouts/theme/obsidian";
+@import "tw-animate-css";
 
 @font-face {
   font-family: "Geist";
@@ -27,11 +28,33 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Array Wide";
+  src: url("/fonts/Array-Wide.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*SOME CHANGES FOR THE ARABIC FONT SIZE*/
+[dir="rtl"] {
+  font-size: 1em;
+}
+
+[dir="rtl"] body {
+  line-height: 1.15;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+  font-weight: 700;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @layer base {
   * {
-    @apply border-border outline-accent/75;
     scrollbar-width: auto;
     scrollbar-color: var(--color-muted) transparent;
   }
@@ -42,6 +65,12 @@
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
   }
 }
 
@@ -60,4 +89,3 @@
 :target {
   scroll-margin-block: 1rem;
 }
-

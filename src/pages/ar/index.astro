@@ -12,11 +12,13 @@ import LinkButton from "@/components/LinkButton.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
+import { getLocalizedSite } from "@/utils/getLocalizedSite";
 
 const { socials, posts: postsConfig } = config;
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
+const localized = getLocalizedSite(locale);
 
 const posts = await getCollection("posts");
 const sortedPosts = getSortedPosts(posts);
@@ -35,7 +37,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Bourhan Bouacida
+        {localized.author}
       </h1>
       <span>                                                          </span>
       <a
@@ -54,7 +56,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
       </a>
 
       <p>
-        A Boy advancing in steady steps toward this world.
+        {localized.description}
       </p>
       <p class="mt-2">
       </p>

@@ -5,12 +5,14 @@ import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconSearch from "@/assets/icons/IconSearch.svg";
+import MorphingTitle from "@/components/MorphingTitle.astro";
 import IconMoon from "@/assets/icons/IconMoon.svg";
 import IconX from "@/assets/icons/IconX.svg";
 import LinkButton from "./LinkButton.astro";
 import { stripBase, stripLocale } from "@/utils/withBase";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
+import LangToggle from "./LangToggle.astro";
 
 const { site, features } = config;
 
@@ -52,7 +54,10 @@ const isActive = (path: string) => {
       href={getRelativeLocaleUrl(locale, "")}
       class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
     >
-      {site.title}
+      <MorphingTitle
+  texts={["b0urh4n", "b0u4cida"]}
+    className="absolute inset-y-0 left-0 flex items-center text-xl sm:text-2xl font-semibold leading-none text-foreground! h-8 max-w-[200px]"
+/>
     </a>
     <nav
       id="nav-menu"
@@ -153,12 +158,16 @@ const isActive = (path: string) => {
                 aria-label="auto"
                 aria-live="polite"
               >
+              
                 <IconMoon class="absolute top-[50%] left-[50%] translate-[-50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
                 <IconSunHigh class="absolute top-[50%] left-[50%] translate-[-50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
               </button>
             </li>
           )
         }
+        <li class="col-span-1 flex items-center justify-center">
+                  <LangToggle />
+              </li>
       </ul>
     </nav>
   </div>

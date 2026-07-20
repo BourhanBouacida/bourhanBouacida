@@ -1,0 +1,67 @@
+import type { UIStrings } from "../types";
+
+export default {
+  nav: {
+    home: "اﻟﺮﺋﻴﺴﻴﺔ",
+    posts: "اﻟﻤﻨﺸﻮﺭاﺕ",
+    tags: "ﺇﺷﺎﺭاﺕ",
+    about: "ﻧﺒﺬﺓ",
+    archives: "اﻷﺭﺷﻴﻒ",
+    search: "ﺑﺤﺚ",
+  },
+  post: {
+    publishedAt: "ﻧُﺸﺮ ﻓﻲ",
+    updatedAt: "ﺁﺧﺮ ﺗﺤﺪﻳﺚ",
+    sharePostIntro: "ﺷﺎﺭﻙ ﻫﺬا اﻟﻤﻨﺸﻮﺭ:",
+    sharePostOn: "ﺷﺎﺭﻛﻪ ﻋﻠﻰ {{platform}}",
+    sharePostViaEmail: "ﺷﺎﺭﻛﻪ ﻋﺒﺮ اﻟﺒﺮﻳﺪ اﻹﻟﻜﺘﺮﻭﻧﻲ",
+    tagLabel: "اﻟﻮﺳﻮﻡ",
+    backToTop: "اﺭﺟﻊ ﻟﻷﻋﻠﻰ",
+    goBack: "ﺭﺟﻮﻉ",
+    editPage: "ﺗﻌﺪﻳﻞ اﻟﺼﻔﺤﺔ",
+    previousPost: "اﻟﻤﻨﺸﻮﺭ اﻟﺴﺎﺑﻖ",
+    nextPost: "اﻟﻤﻨﺸﻮﺭ اﻟﺘﺎﻟﻲ",
+  },
+  pagination: {
+    prev: "اﻟﺴﺎﺑﻖ",
+    next: "اﻟﺘﺎﻟﻲ",
+    page: "ﺻﻔﺤﺔ",
+  },
+  home: {
+    socialLinks: "ﺗﻮاﺻﻞ ﻣﻌﻲ",
+    featured: "ﻣﻤﻴﺰ",
+    recentPosts: "ﺃﺣﺪﺙ اﻟﻤﻨﺸﻮﺭاﺕ",
+    allPosts: "ﻛﻞ اﻟﻤﻨﺸﻮﺭاﺕ",
+  },
+  footer: {
+    copyright: "اﻟﺤﻘﻮﻕ ﻣﺤﻔﻮﻇﺔ",
+    allRightsReserved: "ﺟﻤﻴﻊ اﻟﺤﻘﻮﻕ ﻣﺤﻔﻮﻇﺔ.",
+  },
+  pages: {
+    tagTitle: "ﻭﺳﻢ",
+    tagDesc: "ﻛﻞ اﻟﻤﻘﺎﻻﺕ اﻟﻤﺮﺗﺒﻄﺔ ﺑﻬﺬا اﻟﻮﺳﻢ",
+    tagsTitle: "اﻟﻮﺳﻮﻡ",
+    tagsDesc: "ﻛﻞ اﻟﻮﺳﻮﻡ اﻟﻤﺴﺘﺨﺪﻣﺔ ﻓﻲ اﻟﻤﻨﺸﻮﺭاﺕ.",
+    postsTitle: "اﻟﻤﻨﺸﻮﺭاﺕ",
+    postsDesc: "ﻛﻞ اﻟﻤﻘﺎﻻﺕ اﻟﺘﻲ ﻧﺸﺮﺗﻬﺎ.",
+    archivesTitle: "اﻷﺭﺷﻴﻒ",
+    archivesDesc: "ﻛﻞ اﻟﻤﻘﺎﻻﺕ اﻟﺘﻲ ﺃﺭﺷﻔﺘﻬﺎ.",
+    searchTitle: "ﺑﺤﺚ",
+    searchDesc: "اﺑﺤﺚ ﻋﻦ ﺃﻱ ﻣﻘﺎﻝ ...",
+  },
+  a11y: {
+    skipToContent: "اﻧﺘﻘﻞ ﺇﻟﻰ اﻟﻤﺤﺘﻮﻯ",
+    openMenu: "اﻓﺘﺢ اﻟﻘﺎﺋﻤﺔ",
+    closeMenu: "ﺃﻏﻠﻖ اﻟﻘﺎﺋﻤﺔ",
+    toggleTheme: "ﺑﺪّﻝ اﻟﻤﻈﻬﺮ",
+    searchPlaceholder: "اﺑﺤﺚ ﻋﻦ ﻣﻨﺸﻮﺭ...",
+    noResults: "ﻟﻢ ﻧﺠﺪ ﺃﻱ ﻧﺘﺎﺋﺞ",
+    goToPreviousPage: "اﻧﺘﻘﻞ ﺇﻟﻰ اﻟﺼﻔﺤﺔ اﻟﺴﺎﺑﻘﺔ",
+    goToNextPage: "اﻧﺘﻘﻞ ﺇﻟﻰ اﻟﺼﻔﺤﺔ اﻟﺘﺎﻟﻴﺔ",
+  },
+  notFound: {
+    title: "404 ﻏﻴﺮ ﻣﻮﺟﻮﺩﺓ",
+    message: "اﻟﺼﻔﺤﺔ ﻣﺶ ﻣﻮﺟﻮﺩﺓ",
+    goHome: "اﺭﺟﻊ ﻟﻠﺮﺋﻴﺴﻴﺔ",
+  },
+} satisfies UIStrings;

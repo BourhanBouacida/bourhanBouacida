@@ -10,7 +10,7 @@ const posts = defineCollection({
   schema: ({ image }) =>
     z.object({
       author: z.string().default(config.site.author),
-      pubDatetime: z.date(),
+      pubDatetime: z.coerce.date().default(() => new Date()),
       modDatetime: z.date().optional().nullable(),
       title: z.string(),
       featured: z.boolean().optional(),
@@ -34,5 +34,7 @@ const pages = defineCollection({
     canonicalURL: z.string().optional(),
   }),
 });
+
+
 
 export const collections = { posts, pages };

@@ -1,0 +1,97 @@
+---
+interface Props {
+  texts: string[];
+}
+const { texts } = Astro.props;
+const id = `morph-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<span
+  id={id}
+  class="morphing-wrapper"
+  aria-label={texts[0]}
+  style="position:relative; display:inline-block;"
+>
+  <span class="t1" style="position:absolute; top:0; left:0; white-space:nowrap; opacity:0;"></span>
+  <span class="t2" style="position:absolute; top:0; left:0; white-space:nowrap; opacity:1;"></span>
+  <!-- spacer to hold width -->
+  <span style="visibility:hidden; white-space:nowrap;">{texts[0]}</span>
+</span>
+
+<svg style="position:fixed;width:0;height:0;">
+  <defs>
+    <filter id="threshold">
+      <feColorMatrix in="SourceGraphic" type="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 255 -140"/>
+    </filter>
+  </defs>
+</svg>
+
+<script define:vars={{ texts, id }}>
+  const MORPH_TIME = 1.5;
+  const COOLDOWN = 0.5;
+
+  function initMorph() {
+    const wrapper = document.getElementById(id);
+    if (!wrapper) return;
+
+    const t1 = wrapper.querySelector(".t1");
+    const t2 = wrapper.querySelector(".t2");
+
+    if (!t1 || !t2) return;
+
+    wrapper.style.filter = "url(#threshold) blur(0.6px)";
+
+    let index = 0;
+    let morph = 0;
+    let cooldown = COOLDOWN;
+    let last = performance.now();
+
+    t1.textContent = texts[texts.length - 1];
+    t2.textContent = texts[0];
+
+    function setMorph(fraction) {
+      t2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+      t2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+      const inv = 1 - fraction;
+      t1.style.filter = `blur(${Math.min(8 / inv - 8, 100)}px)`;
+      t1.style.opacity = `${Math.pow(inv, 0.4) * 100}%`;
+      t1.textContent = texts[index % texts.length];
+      t2.textContent = texts[(index + 1) % texts.length];
+    }
+
+    function doCooldown() {
+      morph = 0;
+      t2.style.filter = "none";
+      t2.style.opacity = "100%";
+      t1.style.filter = "none";
+      t1.style.opacity = "0%";
+    }
+
+    function animate(now) {
+      requestAnimationFrame(animate);
+      const dt = (now - last) / 1000;
+      last = now;
+      cooldown -= dt;
+      if (cooldown <= 0) {
+        morph -= cooldown;
+        cooldown = 0;
+        let f = morph / MORPH_TIME;
+        if (f > 1) {
+          cooldown = COOLDOWN;
+          f = 1;
+          index++;
+        }
+        setMorph(f);
+      } else {
+        doCooldown();
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  // Run on load and after Astro page transitions
+  initMorph();
+  document.addEventListener("astro:after-swap", initMorph);
+</script>

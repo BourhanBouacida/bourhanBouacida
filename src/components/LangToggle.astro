@@ -1,0 +1,41 @@
+---
+import IconLanguage from "@/assets/icons/IconLanguage.svg";
+import { stripBase, stripLocale } from "@/utils/withBase";
+
+const locale = Astro.currentLocale ?? "en";
+const relativePath = stripBase(Astro.url.pathname);
+const currentPath = stripLocale(relativePath, locale);
+---
+
+<button
+  id="lang-btn"
+  class="focus-outline hover:[&>svg]:stroke-accent relative size-12 p-4 sm:size-8"
+  title="Switch language"
+  aria-label="Switch language"
+  data-current-locale={locale}
+  data-current-path={currentPath}
+>
+  <IconLanguage class="absolute top-1/2 left-1/2 size-6 -translate-x-1/2 -translate-y-1/2" />
+</button>
+
+<script>
+  function initLangToggle() {
+    const btn = document.querySelector<HTMLButtonElement>("#lang-btn");
+    if (!btn) return;
+
+    btn.addEventListener("click", () => {
+      const currentLocale = btn.dataset.currentLocale ?? "en";
+      const currentPath = btn.dataset.currentPath ?? "/";
+      const nextLocale = currentLocale === "ar" ? "en" : "ar";
+
+      const cleanPath = currentPath === "/" ? "" : currentPath;
+      const newPath =
+        nextLocale === "en" ? cleanPath || "/" : `/ar${cleanPath || "/"}`;
+
+      window.location.href = newPath;
+    });
+  }
+
+  initLangToggle();
+  document.addEventListener("astro:after-swap", initLangToggle);
+</script>

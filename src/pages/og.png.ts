@@ -6,8 +6,8 @@ import config from "@/config";
 
 export const GET: APIRoute = async () => {
   const [regularData, boldData] = await Promise.all([
-    readFile("public/fonts/Geist-Medium.ttf"),
-    readFile("public/fonts/Geist-Medium.ttf"),
+    readFile("public/fonts/GeneralSans-Medium.ttf"),
+    readFile("public/fonts/GeneralSans-Medium.ttf"),
   ]);
 
   const svg = await satori(
@@ -21,7 +21,7 @@ export const GET: APIRoute = async () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          fontFamily: "Geist",
+          fontFamily: "GeneralSans",
         },
         children: [
           {
@@ -131,8 +131,8 @@ export const GET: APIRoute = async () => {
       height: 630,
       embedFont: true,
       fonts: [
-        { name: "Geist", data: regularData, weight: 400, style: "normal" },
-        { name: "Geist", data: boldData, weight: 700, style: "normal" },
+        { name: "GeneralSans", data: regularData, weight: 400, style: "normal" },
+        { name: "GeneralSans", data: boldData, weight: 700, style: "normal" },
       ],
     }
   );

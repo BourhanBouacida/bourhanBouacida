@@ -15,13 +15,13 @@ type Props = {
 };
 
 const { site } = config;
-
+const locale = Astro.currentLocale ?? site.lang;
 const {
   title = site.title,
   description = site.description,
   ogImage = resolveDefaultOgImagePath(config),
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
-  dir = site.dir ?? "ltr",
+  dir = locale === "ar" ? "rtl" : (site.dir ?? "ltr"),
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.site ?? Astro.url);
