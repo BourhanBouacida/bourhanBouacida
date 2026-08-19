@@ -5,7 +5,7 @@ pubDatetime: 2026-08-18T10:00:00Z
 tags: ["cv", "it-support", "cybersecurity"]
 description: "Compétences, outils maîtrisés, projets, et expériences"
 draft: false
-lang: 'en, ar'
+lang: 'en'
 ---
 
 **Bouassida Borhan Eddine**
@@ -14,11 +14,15 @@ lang: 'en, ar'
 
 ✉️ goldenbourhane@gmail.com
 
+- Pour la version arabe, veuillez cliquer [ici](http://localhost:4321/ar/posts/cv_ar/). 
+
 ## Table of contents
+
+
 
 ## Résumé professionnel
 
-> Professionnel du support informatique rigoureux et doté d'une excellente vitesse de frappe, avec une solide expérience administrative et une expertise pratique en Linux, Windows, réseaux et scripting. Actuellement en formation en cybersécurité. Titulaire d'une licence d'anglais (Université Oum El Bouaghi) et d'une certification Cisco Networking Fundamentals. Allie d'excellentes compétences en dépannage technique à une communication écrite et orale irréprochable, une grande précision dans la saisie de données et un sens aigu de l'organisation.
+> Professionnel polyvalent alliant une solide expérience administrative à des compétences techniques en Linux, Windows, réseaux et développement web. Rapide à la frappe et rigoureux dans la gestion de données, il poursuit actuellement une formation approfondie en cybersécurité. Titulaire d'une Licence en Anglais et du badge Cisco Networking Fundamentals, il conjugue aisance en communication et capacité d'adaptation rapide aux environnements techniques exigeants.
 
 ## Compétences clés
 
@@ -45,30 +49,33 @@ lang: 'en, ar'
 ## Certifications
 
 ### Cisco Networking Fundamentals
-**Cisco Networking Academy** — *[ajouter la date/l'année si disponible]*
+**Cisco Networking Academy** — *11 Avril 2026*
+
+- Lien de badge: https://www.credly.com/badges/842cb783-a48c-4397-80b1-920e80e94b7a
 
 ---
 
 ## Expérience professionnelle
 
-### Stagiaire (Stage) — [Nom de l'entité gouvernementale]
+### Stagiaire â le Centre de Formation Professionnelle et de Apprentissage Berriche
 *Estimée [04/2025] – [05/2025]  (1 mois)*
 
-- Tâche/fonction 1 — : assistance au traitement des documents et à l'archivage administratif
-- Tâche/fonction 2 — : prise en charge de la saisie de données et de la gestion des dossiers
-- Tâche/fonction 3 — : soutien aux opérations quotidiennes du bureau et communication avec lepersonnel/le public
+Les Tâches et Fonctions:
+- assistance au traitement des documents et à l'archivage administratif
+- prise en charge de la saisie de données et de la gestion des dossiers
+- soutien aux opérations quotidiennes du bureau et communication avec lepersonnel/le public
 
 ---
 
 ## Projets
 
 ### Création d'applications web
-a google drive folder link containing some DESKTOP not MOBILE ; web apps that i have created :
+- Un lien vers un dossier Google Drive contenant des applications web (pour ordinateur, pas pour mobile) que j'ai créées :
 
     https://drive.google.com/drive/folders/1NWGDjGqL5jnY1dcxSGtk_7NmoI7AqIim?usp=sharing
 
 ### Projets minimales en Python :
-
+- Un dossier contenant des liens vers divers projets Python
     https://drive.google.com/drive/folders/1JAOW5FWYL7knEj-kNobILvoM2yucqfKv?usp=sharing
 
 ### A Mix of Linux Knowledge with Python Scripting 
@@ -78,7 +85,8 @@ Brève description : ce qu'il fait, outils/technologies utilisés, résultat
 
 ## Informations complémentaires
 
-- Vitesse de frappe rapide (60 mots par minutes en anglais)
+- Vitesse de frappe rapide (60 mots par minutes en anglais/ 40 mots par minutes en arabe)
 ![screenshot of typing speed](<Screenshot From 2026-08-18 07-29-10 (Edited).png>)
+![alt text](image-2.png)
 - Automatisation de base via l'IA avec Claude, Gemini, ChatGpt et Z.ai
-- Poursuit activement des formations et certifications complémentaires en cybersécurité
+- Poursuit activement une carriére en cybersécurité
