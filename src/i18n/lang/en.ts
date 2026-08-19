@@ -4,6 +4,7 @@ export default {
   nav: {
     home: "Home",
     posts: "Posts",
+    // portfolio: "Portfolio",
     tags: "Tags",
     about: "About",
     archives: "Archives",
@@ -53,6 +54,12 @@ export default {
     searchTitle: "Search",
     searchDesc: "Search any article ...",
   },
+  // portfolio: {
+  // title: "Portfolio",
+  // desc: "A selection of projects I've built.",
+  // viewProject: "View Project",
+  // sourceCode: "Source Code",
+  // },
   a11y: {
     skipToContent: "Skip to content",
     openMenu: "Open menu",

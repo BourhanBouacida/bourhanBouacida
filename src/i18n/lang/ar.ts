@@ -49,6 +49,12 @@ export default {
     searchTitle: "ﺑﺤﺚ",
     searchDesc: "اﺑﺤﺚ ﻋﻦ ﺃﻱ ﻣﻘﺎﻝ ...",
   },
+  // portfolio: {
+  // title: "معرض الأعمال",
+  // desc: "مجموعة من المشاريع التي أنجزتها.",
+  // viewProject: "عرض المشروع",
+  // sourceCode: "الكود المصدري",
+  // },
   a11y: {
     skipToContent: "اﻧﺘﻘﻞ ﺇﻟﻰ اﻟﻤﺤﺘﻮﻯ",
     openMenu: "اﻓﺘﺢ اﻟﻘﺎﺋﻤﺔ",
