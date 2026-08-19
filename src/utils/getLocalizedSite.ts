@@ -1,11 +1,11 @@
 const localizedContent: Record<string, { author: string; description: string }> = {
   en: {
     author: "Bourhan Bouacida",
-    description: "A Boy advancing in steady steps toward this world.",
+    description: "Advancing in steady steps toward the world..",
   },
   ar: {
     author: "برهان بوعصيدة",
-    description: "شاب يتقدم بخطى ثابتة نحو العالم.",
+    description: "سائر على الدرب، أبحث عن المعنى في كل خطوة.",
   },
 };
 

@@ -14,7 +14,7 @@ lang: 'en'
 
 ✉️ goldenbourhane@gmail.com
 
-- Pour la version arabe, veuillez cliquer [ici](http://localhost:4321/ar/posts/cv_ar/). 
+- Pour la version arabe, veuillez cliquer [ici](https://bourhanbouacida.pages.dev/ar/posts/cv_ar/). 
 
 ## Table of contents
 
@@ -76,12 +76,9 @@ Les Tâches et Fonctions:
 
 ### Projets minimales en Python :
 - Un dossier contenant des liens vers divers projets Python
+    
     https://drive.google.com/drive/folders/1JAOW5FWYL7knEj-kNobILvoM2yucqfKv?usp=sharing
 
-### A Mix of Linux Knowledge with Python Scripting 
-Brève description : ce qu'il fait, outils/technologies utilisés, résultat
-
----
 
 ## Informations complémentaires
 

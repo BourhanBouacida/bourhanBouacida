@@ -43,7 +43,7 @@ export default {
     tagsTitle: "اﻟﻮﺳﻮﻡ",
     tagsDesc: "ﻛﻞ اﻟﻮﺳﻮﻡ اﻟﻤﺴﺘﺨﺪﻣﺔ ﻓﻲ اﻟﻤﻨﺸﻮﺭاﺕ.",
     postsTitle: "اﻟﻤﻨﺸﻮﺭاﺕ",
-    postsDesc: "ﻛﻞ اﻟﻤﻘﺎﻻﺕ اﻟﺘﻲ ﻧﺸﺮﺗﻬﺎ.",
+    postsDesc: "ﻛﻞ اﻟﻤﻘﺎﻻﺕ اﻟﺘﻲ ﻧﺸﺮﺗﻬﺎ باللغة العربية.",
     archivesTitle: "اﻷﺭﺷﻴﻒ",
     archivesDesc: "ﻛﻞ اﻟﻤﻘﺎﻻﺕ اﻟﺘﻲ ﺃﺭﺷﻔﺘﻬﺎ.",
     searchTitle: "ﺑﺤﺚ",

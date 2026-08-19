@@ -4,7 +4,7 @@ author: "Bourhan Bouacida"
 tags: []
 description: "Recording my approach in learning Path Traversal Pentesting"
 draft: false
-lang: 'ar'
+lang: 'en'
 ---
 
 > [!Note]+
