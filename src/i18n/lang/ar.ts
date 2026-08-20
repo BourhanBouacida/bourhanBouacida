@@ -67,7 +67,7 @@ export default {
   },
   notFound: {
     title: "404 ﻏﻴﺮ ﻣﻮﺟﻮﺩﺓ",
-    message: "اﻟﺼﻔﺤﺔ ﻣﺶ ﻣﻮﺟﻮﺩﺓ",
+    message: "اﻟﺼﻔﺤﺔ غير ﻣﻮﺟﻮﺩﺓ",
     goHome: "اﺭﺟﻊ ﻟﻠﺮﺋﻴﺴﻴﺔ",
   },
 } satisfies UIStrings;

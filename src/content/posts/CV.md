@@ -14,7 +14,8 @@ lang: 'en'
 
 ✉️ goldenbourhane@gmail.com
 
-- Pour la version arabe, veuillez cliquer [ici](https://bourhanbouacida.pages.dev/ar/posts/cv_ar/). 
+> [!TIP] يمكنك القراءة باللغة العربية
+>  [اضغط هنا](https://bourhanbouacida.pages.dev/ar/posts/cv_ar/)
 
 ## Table of contents
 
